@@ -1,0 +1,308 @@
+{
+  "environment": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22000-SP0",
+    "cryptography": "50.0.0",
+    "psutil": "7.2.2"
+  },
+  "method": {
+    "metric": "incremental RSS at the operation's allocation checkpoint",
+    "tool": "psutil in a fresh worker process",
+    "repetitions": 3,
+    "input_allocated_before_baseline": true,
+    "revised_checkpoint": "RSS read while output bytearray and converted bytes result are both retained",
+    "aes_checkpoint": "RSS read while returned bytes result is retained",
+    "raw_block_mode": "ECB-style independent blocks for laboratory measurement only",
+    "comparison_scope": "implementation-level memory measurement"
+  },
+  "records": [
+    {
+      "algorithm": "Revised-with-DCS",
+      "size_bytes": 1048576,
+      "encryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          2113536,
+          2113536,
+          2113536
+        ],
+        "mean_incremental_peak_bytes": 2113536,
+        "median_incremental_peak_bytes": 2113536,
+        "sd_incremental_peak_bytes": 0.0,
+        "mean_incremental_peak_MiB": 2.015625,
+        "baseline_rss_values_bytes": [
+          26451968,
+          26877952,
+          26423296
+        ],
+        "checkpoint_rss_values_bytes": [
+          28565504,
+          28991488,
+          28536832
+        ]
+      },
+      "decryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          2105344,
+          2105344,
+          2105344
+        ],
+        "mean_incremental_peak_bytes": 2105344,
+        "median_incremental_peak_bytes": 2105344,
+        "sd_incremental_peak_bytes": 0.0,
+        "mean_incremental_peak_MiB": 2.0078125,
+        "baseline_rss_values_bytes": [
+          26206208,
+          26828800,
+          26529792
+        ],
+        "checkpoint_rss_values_bytes": [
+          28311552,
+          28934144,
+          28635136
+        ]
+      }
+    },
+    {
+      "algorithm": "AES-128-OpenSSL-backend",
+      "size_bytes": 1048576,
+      "encryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          1966080,
+          1757184,
+          1757184
+        ],
+        "mean_incremental_peak_bytes": 1826816,
+        "median_incremental_peak_bytes": 1757184,
+        "sd_incremental_peak_bytes": 120606.16183263606,
+        "mean_incremental_peak_MiB": 1.7421875,
+        "baseline_rss_values_bytes": [
+          26497024,
+          26865664,
+          26955776
+        ],
+        "checkpoint_rss_values_bytes": [
+          28463104,
+          28622848,
+          28712960
+        ]
+      },
+      "decryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          1052672,
+          1052672,
+          1052672
+        ],
+        "mean_incremental_peak_bytes": 1052672,
+        "median_incremental_peak_bytes": 1052672,
+        "sd_incremental_peak_bytes": 0.0,
+        "mean_incremental_peak_MiB": 1.00390625,
+        "baseline_rss_values_bytes": [
+          27389952,
+          27357184,
+          27590656
+        ],
+        "checkpoint_rss_values_bytes": [
+          28442624,
+          28409856,
+          28643328
+        ]
+      }
+    },
+    {
+      "algorithm": "Revised-with-DCS",
+      "size_bytes": 10485760,
+      "encryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          21028864,
+          21028864,
+          21028864
+        ],
+        "mean_incremental_peak_bytes": 21028864,
+        "median_incremental_peak_bytes": 21028864,
+        "sd_incremental_peak_bytes": 0.0,
+        "mean_incremental_peak_MiB": 20.0546875,
+        "baseline_rss_values_bytes": [
+          36253696,
+          36012032,
+          35991552
+        ],
+        "checkpoint_rss_values_bytes": [
+          57282560,
+          57040896,
+          57020416
+        ]
+      },
+      "decryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          20926464,
+          20926464,
+          20922368
+        ],
+        "mean_incremental_peak_bytes": 20925098.666666668,
+        "median_incremental_peak_bytes": 20926464,
+        "sd_incremental_peak_bytes": 2364.826702600707,
+        "mean_incremental_peak_MiB": 19.955729166666668,
+        "baseline_rss_values_bytes": [
+          36286464,
+          35966976,
+          35667968
+        ],
+        "checkpoint_rss_values_bytes": [
+          57212928,
+          56893440,
+          56590336
+        ]
+      }
+    },
+    {
+      "algorithm": "AES-128-OpenSSL-backend",
+      "size_bytes": 10485760,
+      "encryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          11341824,
+          11390976,
+          11137024
+        ],
+        "mean_incremental_peak_bytes": 11289941.333333334,
+        "median_incremental_peak_bytes": 11341824,
+        "sd_incremental_peak_bytes": 134691.36164332638,
+        "mean_incremental_peak_MiB": 10.766927083333334,
+        "baseline_rss_values_bytes": [
+          35930112,
+          35905536,
+          35917824
+        ],
+        "checkpoint_rss_values_bytes": [
+          47271936,
+          47296512,
+          47054848
+        ]
+      },
+      "decryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          10489856,
+          10489856,
+          10489856
+        ],
+        "mean_incremental_peak_bytes": 10489856,
+        "median_incremental_peak_bytes": 10489856,
+        "sd_incremental_peak_bytes": 0.0,
+        "mean_incremental_peak_MiB": 10.00390625,
+        "baseline_rss_values_bytes": [
+          36831232,
+          36974592,
+          36888576
+        ],
+        "checkpoint_rss_values_bytes": [
+          47321088,
+          47464448,
+          47378432
+        ]
+      }
+    },
+    {
+      "algorithm": "Revised-with-DCS",
+      "size_bytes": 52428800,
+      "encryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          104833024,
+          104841216,
+          104833024
+        ],
+        "mean_incremental_peak_bytes": 104835754.66666667,
+        "median_incremental_peak_bytes": 104833024,
+        "sd_incremental_peak_bytes": 4729.653405201414,
+        "mean_incremental_peak_MiB": 99.97916666666667,
+        "baseline_rss_values_bytes": [
+          78155776,
+          77783040,
+          78139392
+        ],
+        "checkpoint_rss_values_bytes": [
+          182988800,
+          182624256,
+          182972416
+        ]
+      },
+      "decryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          104865792,
+          104865792,
+          104865792
+        ],
+        "mean_incremental_peak_bytes": 104865792,
+        "median_incremental_peak_bytes": 104865792,
+        "sd_incremental_peak_bytes": 0.0,
+        "mean_incremental_peak_MiB": 100.0078125,
+        "baseline_rss_values_bytes": [
+          78233600,
+          77152256,
+          78188544
+        ],
+        "checkpoint_rss_values_bytes": [
+          183099392,
+          182018048,
+          183054336
+        ]
+      }
+    },
+    {
+      "algorithm": "AES-128-OpenSSL-backend",
+      "size_bytes": 52428800,
+      "encryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          53059584,
+          53096448,
+          53190656
+        ],
+        "mean_incremental_peak_bytes": 53115562.666666664,
+        "median_incremental_peak_bytes": 53096448,
+        "sd_incremental_peak_bytes": 67594.34264295595,
+        "mean_incremental_peak_MiB": 50.654947916666664,
+        "baseline_rss_values_bytes": [
+          77983744,
+          78155776,
+          78282752
+        ],
+        "checkpoint_rss_values_bytes": [
+          131043328,
+          131252224,
+          131473408
+        ]
+      },
+      "decryption": {
+        "runs": 3,
+        "incremental_peak_values_bytes": [
+          52432896,
+          52432896,
+          52432896
+        ],
+        "mean_incremental_peak_bytes": 52432896,
+        "median_incremental_peak_bytes": 52432896,
+        "sd_incremental_peak_bytes": 0.0,
+        "mean_incremental_peak_MiB": 50.00390625,
+        "baseline_rss_values_bytes": [
+          78749696,
+          78635008,
+          78913536
+        ],
+        "checkpoint_rss_values_bytes": [
+          131182592,
+          131067904,
+          131346432
+        ]
+      }
+    }
+  ]
+}

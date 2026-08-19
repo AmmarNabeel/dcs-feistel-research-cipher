@@ -1,0 +1,56 @@
+{
+  "method": {
+    "seed": 20260816,
+    "key_samples": 100000,
+    "rounds_per_key": 7,
+    "position_observations": 700000,
+    "block_samples_for_output_divergence": 10000,
+    "involution_samples": 100000
+  },
+  "position_selection": {
+    "distinct_pairs_observed": 64,
+    "possible_pairs": 64,
+    "pair_entropy_bits": 5.99995040777549,
+    "maximum_pair_entropy_bits": 6.0,
+    "pair_min_count": 10738,
+    "pair_max_count": 11133,
+    "pair_expected_count": 10937.5,
+    "pair_chi_square_p_value": 0.9175263832383113,
+    "left_counts": [
+      87160,
+      87591,
+      87437,
+      87579,
+      87450,
+      87672,
+      87537,
+      87574
+    ],
+    "left_chi_square_p_value": 0.9610821730524085,
+    "right_counts": [
+      87614,
+      87220,
+      87888,
+      87574,
+      87509,
+      87667,
+      87502,
+      87026
+    ],
+    "right_chi_square_p_value": 0.5733883938670503
+  },
+  "reversibility": {
+    "failures": 0,
+    "tests": 100000
+  },
+  "output_path_divergence": {
+    "different_ciphertexts": 10000,
+    "tests": 10000,
+    "mean_hamming_bits": 63.9571,
+    "mean_percentage": 49.966484375,
+    "sd_hamming_bits": 5.633864893069707,
+    "min_hamming_bits": 42,
+    "max_hamming_bits": 85
+  },
+  "interpretation_boundary": "These measurements show key/round-dependent position coverage, involution, and state-path diversification. They do not prove added resistance to differential, linear, related-key, or side-channel attacks."
+}

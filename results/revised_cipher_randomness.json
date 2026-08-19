@@ -1,0 +1,3189 @@
+{
+  "environment": {
+    "python": "3.12.13 (main, Aug  7 2026, 02:25:39) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "method": {
+    "seed": 20260815,
+    "alpha": 0.01,
+    "streams_per_configuration": 100,
+    "bytes_per_stream": 131072,
+    "plaintext": "unique 64-bit stream identifier concatenated with sequential 64-bit counters",
+    "independent_key_per_stream": true,
+    "interpretation": "NIST-style subset; this is empirical evidence, not a proof of cryptographic security"
+  },
+  "summary": {
+    "without_dcs": {
+      "frequency": {
+        "passed_streams": 100,
+        "total_streams": 100,
+        "pass_proportion": 1.0,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.6163052249833654,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          7,
+          8,
+          10,
+          11,
+          13,
+          8,
+          16,
+          10,
+          7,
+          10
+        ],
+        "min_p_value": 0.021849804147878488,
+        "median_p_value": 0.5066632798889882
+      },
+      "block_frequency": {
+        "passed_streams": 98,
+        "total_streams": 100,
+        "pass_proportion": 0.98,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.41902116661019323,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          14,
+          12,
+          13,
+          8,
+          11,
+          7,
+          10,
+          8,
+          4,
+          13
+        ],
+        "min_p_value": 0.006213608103927703,
+        "median_p_value": 0.46555340191994077
+      },
+      "runs": {
+        "passed_streams": 100,
+        "total_streams": 100,
+        "pass_proportion": 1.0,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.12961959133276194,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          13,
+          7,
+          11,
+          6,
+          13,
+          14,
+          9,
+          16,
+          5,
+          6
+        ],
+        "min_p_value": 0.010254519183953236,
+        "median_p_value": 0.49650467309669877
+      },
+      "longest_run": {
+        "passed_streams": 99,
+        "total_streams": 100,
+        "pass_proportion": 0.99,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.035173539466984795,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          5,
+          10,
+          15,
+          5,
+          9,
+          7,
+          8,
+          9,
+          13,
+          19
+        ],
+        "min_p_value": 0.006532777985950607,
+        "median_p_value": 0.5772808674723175
+      },
+      "approximate_entropy": {
+        "passed_streams": 97,
+        "total_streams": 100,
+        "pass_proportion": 0.97,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.9240759301265984,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          9,
+          9,
+          12,
+          7,
+          10,
+          8,
+          13,
+          13,
+          10,
+          9
+        ],
+        "min_p_value": 0.0034100269350815808,
+        "median_p_value": 0.5365240493904049
+      },
+      "serial_1": {
+        "passed_streams": 97,
+        "total_streams": 100,
+        "pass_proportion": 0.97,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.30412581641191044,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          10,
+          10,
+          12,
+          8,
+          8,
+          15,
+          6,
+          9,
+          16,
+          6
+        ],
+        "min_p_value": 0.0025527709138463794,
+        "median_p_value": 0.5167565623014854
+      },
+      "serial_2": {
+        "passed_streams": 100,
+        "total_streams": 100,
+        "pass_proportion": 1.0,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.5341462169096916,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          13,
+          8,
+          11,
+          10,
+          16,
+          6,
+          10,
+          11,
+          7,
+          8
+        ],
+        "min_p_value": 0.012017308955827201,
+        "median_p_value": 0.47385483773333825
+      }
+    },
+    "with_dcs": {
+      "frequency": {
+        "passed_streams": 100,
+        "total_streams": 100,
+        "pass_proportion": 1.0,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.010988016145239983,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          10,
+          10,
+          5,
+          3,
+          15,
+          6,
+          15,
+          18,
+          11,
+          7
+        ],
+        "min_p_value": 0.015523841903040084,
+        "median_p_value": 0.6020300802312917
+      },
+      "block_frequency": {
+        "passed_streams": 100,
+        "total_streams": 100,
+        "pass_proportion": 1.0,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.8676916714977053,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          9,
+          10,
+          8,
+          8,
+          9,
+          11,
+          14,
+          13,
+          7,
+          11
+        ],
+        "min_p_value": 0.01747092850462357,
+        "median_p_value": 0.5498855743157525
+      },
+      "runs": {
+        "passed_streams": 99,
+        "total_streams": 100,
+        "pass_proportion": 0.99,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.4749856866480098,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          5,
+          9,
+          11,
+          9,
+          8,
+          9,
+          14,
+          16,
+          9,
+          10
+        ],
+        "min_p_value": 0.009820687786040266,
+        "median_p_value": 0.5824008942695399
+      },
+      "longest_run": {
+        "passed_streams": 97,
+        "total_streams": 100,
+        "pass_proportion": 0.97,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.5749034238644555,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          14,
+          15,
+          8,
+          8,
+          8,
+          12,
+          9,
+          9,
+          6,
+          11
+        ],
+        "min_p_value": 0.0009982276724709385,
+        "median_p_value": 0.4643607875769412
+      },
+      "approximate_entropy": {
+        "passed_streams": 100,
+        "total_streams": 100,
+        "pass_proportion": 1.0,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.9240759301265984,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          8,
+          11,
+          8,
+          11,
+          12,
+          11,
+          8,
+          11,
+          7,
+          13
+        ],
+        "min_p_value": 0.02169383854027137,
+        "median_p_value": 0.5009615374451784
+      },
+      "serial_1": {
+        "passed_streams": 99,
+        "total_streams": 100,
+        "pass_proportion": 0.99,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.9114125268316792,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          8,
+          7,
+          12,
+          10,
+          13,
+          10,
+          9,
+          13,
+          8,
+          10
+        ],
+        "min_p_value": 0.008870161606046256,
+        "median_p_value": 0.5010724236127152
+      },
+      "serial_2": {
+        "passed_streams": 100,
+        "total_streams": 100,
+        "pass_proportion": 1.0,
+        "expected_proportion_interval_3sigma": [
+          0.9601503768868014,
+          1
+        ],
+        "proportion_acceptable": true,
+        "p_value_uniformity": 0.10879095519400779,
+        "uniformity_acceptable": true,
+        "p_value_bins": [
+          10,
+          5,
+          10,
+          10,
+          9,
+          12,
+          19,
+          12,
+          5,
+          8
+        ],
+        "min_p_value": 0.013348301574165684,
+        "median_p_value": 0.5536564495928921
+      }
+    }
+  },
+  "records": [
+    {
+      "stream": 0,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4603435579794385,
+        "block_frequency": 0.16879086197470408,
+        "runs": 0.4847477669871972,
+        "longest_run": 0.20375193538044875,
+        "approximate_entropy": 0.47389580333512105,
+        "serial_1": 0.5196466606727684,
+        "serial_2": 0.0669276495267539
+      }
+    },
+    {
+      "stream": 0,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8056096611107336,
+        "block_frequency": 0.04885968193627911,
+        "runs": 0.8436659491800652,
+        "longest_run": 0.2392347977091914,
+        "approximate_entropy": 0.9772867223519047,
+        "serial_1": 0.7019424656696431,
+        "serial_2": 0.6412643633845035
+      }
+    },
+    {
+      "stream": 1,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.29335906922758337,
+        "block_frequency": 0.1489125656874824,
+        "runs": 0.5745096661719488,
+        "longest_run": 0.28143646232331654,
+        "approximate_entropy": 0.705019875117354,
+        "serial_1": 0.7247502865656023,
+        "serial_2": 0.33837162723512115
+      }
+    },
+    {
+      "stream": 1,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4603435579794385,
+        "block_frequency": 0.47418262450957965,
+        "runs": 0.3324041144961871,
+        "longest_run": 0.6487006091428118,
+        "approximate_entropy": 0.5739619522796731,
+        "serial_1": 0.5839656883870264,
+        "serial_2": 0.759282572284209
+      }
+    },
+    {
+      "stream": 2,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.3365835941244159,
+        "block_frequency": 0.4575069455079085,
+        "runs": 0.7762151670394081,
+        "longest_run": 0.29292742408013844,
+        "approximate_entropy": 0.20677564140691573,
+        "serial_1": 0.6176271024992379,
+        "serial_2": 0.3751595184062087
+      }
+    },
+    {
+      "stream": 2,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6308941187939342,
+        "block_frequency": 0.1127640312148673,
+        "runs": 0.23743772518520362,
+        "longest_run": 0.6831641283241612,
+        "approximate_entropy": 0.3693382444234394,
+        "serial_1": 0.3091079527764303,
+        "serial_2": 0.23641029004472172
+      }
+    },
+    {
+      "stream": 3,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7105677059904548,
+        "block_frequency": 0.49636388774562534,
+        "runs": 0.013333164088870513,
+        "longest_run": 0.814344901348532,
+        "approximate_entropy": 0.5920387816927832,
+        "serial_1": 0.2743013161580217,
+        "serial_2": 0.4978129800398471
+      }
+    },
+    {
+      "stream": 3,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.18673070385382215,
+        "block_frequency": 0.5279095011393702,
+        "runs": 0.16249253690782356,
+        "longest_run": 0.15966095382961276,
+        "approximate_entropy": 0.8818665348771565,
+        "serial_1": 0.9805082452064587,
+        "serial_2": 0.6645987457246525
+      }
+    },
+    {
+      "stream": 4,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.2723546205353841,
+        "block_frequency": 0.47437689421565093,
+        "runs": 0.6245171829594778,
+        "longest_run": 0.22165497964592193,
+        "approximate_entropy": 0.3287236155895447,
+        "serial_1": 0.43099798732245503,
+        "serial_2": 0.23514697813082122
+      }
+    },
+    {
+      "stream": 4,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.018499352969196567,
+        "block_frequency": 0.5846445398936846,
+        "runs": 0.520209366615312,
+        "longest_run": 0.32231626747864434,
+        "approximate_entropy": 0.6620839612318141,
+        "serial_1": 0.7500403627430361,
+        "serial_2": 0.825426124989943
+      }
+    },
+    {
+      "stream": 5,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.1528067294592772,
+        "block_frequency": 0.13325700822507983,
+        "runs": 0.5939220048670967,
+        "longest_run": 0.9419172984934986,
+        "approximate_entropy": 0.2288788858540422,
+        "serial_1": 0.2931623458523729,
+        "serial_2": 0.6060445387406431
+      }
+    },
+    {
+      "stream": 5,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6773985696933952,
+        "block_frequency": 0.969170309207224,
+        "runs": 0.5749911715382912,
+        "longest_run": 0.06077070845718064,
+        "approximate_entropy": 0.3100212622929393,
+        "serial_1": 0.1776795825500096,
+        "serial_2": 0.414198843072899
+      }
+    },
+    {
+      "stream": 6,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9501646619415056,
+        "block_frequency": 0.9443104450969361,
+        "runs": 0.42438786598714107,
+        "longest_run": 0.13204106007029473,
+        "approximate_entropy": 0.7072944342652516,
+        "serial_1": 0.584890981203645,
+        "serial_2": 0.49938183936565483
+      }
+    },
+    {
+      "stream": 6,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8819975071408401,
+        "block_frequency": 0.44553397591143273,
+        "runs": 0.9579264045094372,
+        "longest_run": 0.7187650302388104,
+        "approximate_entropy": 0.7782105530673271,
+        "serial_1": 0.6163642526016364,
+        "serial_2": 0.44005805772945455
+      }
+    },
+    {
+      "stream": 7,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4462278821971807,
+        "block_frequency": 0.15574010252561538,
+        "runs": 0.5170682324359098,
+        "longest_run": 0.14879208405323338,
+        "approximate_entropy": 0.7810780996350921,
+        "serial_1": 0.8829563840211756,
+        "serial_2": 0.982250388445096
+      }
+    },
+    {
+      "stream": 7,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7413409315239896,
+        "block_frequency": 0.7204713821464827,
+        "runs": 0.7428975719609663,
+        "longest_run": 0.9877353968776602,
+        "approximate_entropy": 0.23430824198218547,
+        "serial_1": 0.7875496655477773,
+        "serial_2": 0.9157670295032712
+      }
+    },
+    {
+      "stream": 8,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.47349944022790197,
+        "block_frequency": 0.6466015575111422,
+        "runs": 0.08020478395528322,
+        "longest_run": 0.754304544753829,
+        "approximate_entropy": 0.45804904850816935,
+        "serial_1": 0.4576577050247418,
+        "serial_2": 0.844071567192567
+      }
+    },
+    {
+      "stream": 8,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6033903266339048,
+        "block_frequency": 0.106435935665104,
+        "runs": 0.5620395917556003,
+        "longest_run": 0.9398914742254498,
+        "approximate_entropy": 0.1901043001726077,
+        "serial_1": 0.61022401886271,
+        "serial_2": 0.2326577812419569
+      }
+    },
+    {
+      "stream": 9,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.09038708269756265,
+        "block_frequency": 0.24281165732992047,
+        "runs": 0.6810692286572722,
+        "longest_run": 0.3305243306323332,
+        "approximate_entropy": 0.840785241137193,
+        "serial_1": 0.8531015888972799,
+        "serial_2": 0.6405545699605484
+      }
+    },
+    {
+      "stream": 9,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.01594568981805751,
+        "block_frequency": 0.6591843387206002,
+        "runs": 0.688729733106514,
+        "longest_run": 0.30274485340126095,
+        "approximate_entropy": 0.7889373692950409,
+        "serial_1": 0.38327353806045733,
+        "serial_2": 0.2348222326302856
+      }
+    },
+    {
+      "stream": 10,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9423905204223437,
+        "block_frequency": 0.2610648466200838,
+        "runs": 0.07745963764677266,
+        "longest_run": 0.21828181956631537,
+        "approximate_entropy": 0.8951700818211256,
+        "serial_1": 0.5853955271082758,
+        "serial_2": 0.16935642588825509
+      }
+    },
+    {
+      "stream": 10,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.2070500075611641,
+        "block_frequency": 0.2914776241272094,
+        "runs": 0.5713879291910016,
+        "longest_run": 0.5359781251084472,
+        "approximate_entropy": 0.7333238667849858,
+        "serial_1": 0.503442456413569,
+        "serial_2": 0.0811776887829952
+      }
+    },
+    {
+      "stream": 11,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4917677007605229,
+        "block_frequency": 0.9084412174289844,
+        "runs": 0.25259453030072665,
+        "longest_run": 0.4829113394835203,
+        "approximate_entropy": 0.17666636099840294,
+        "serial_1": 0.07373766505563112,
+        "serial_2": 0.15815161533327216
+      }
+    },
+    {
+      "stream": 11,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8222831710376093,
+        "block_frequency": 0.6650106855943558,
+        "runs": 0.3721095089796663,
+        "longest_run": 0.7447672583804714,
+        "approximate_entropy": 0.5262936285729307,
+        "serial_1": 0.6431850978959704,
+        "serial_2": 0.25956050235943634
+      }
+    },
+    {
+      "stream": 12,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.5016632770821084,
+        "block_frequency": 0.5949204511700589,
+        "runs": 0.04566371775015028,
+        "longest_run": 0.14492566354734426,
+        "approximate_entropy": 0.7822997263537402,
+        "serial_1": 0.826000869982222,
+        "serial_2": 0.8360016590549701
+      }
+    },
+    {
+      "stream": 12,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4255236315215791,
+        "block_frequency": 0.8943587543962426,
+        "runs": 0.3630669083008039,
+        "longest_run": 0.5487860449464126,
+        "approximate_entropy": 0.24110888850689408,
+        "serial_1": 0.45440303281675265,
+        "serial_2": 0.7494720809059031
+      }
+    },
+    {
+      "stream": 13,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4075997126637061,
+        "block_frequency": 0.9526885425871764,
+        "runs": 0.46708342163767486,
+        "longest_run": 0.3919553472093748,
+        "approximate_entropy": 0.858397110107432,
+        "serial_1": 0.9188015946720636,
+        "serial_2": 0.6264688068270061
+      }
+    },
+    {
+      "stream": 13,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.10796185464086931,
+        "block_frequency": 0.3278549954179113,
+        "runs": 0.9412898323396203,
+        "longest_run": 0.5007563289441264,
+        "approximate_entropy": 0.730623189821801,
+        "serial_1": 0.4282596553421228,
+        "serial_2": 0.3873947946029109
+      }
+    },
+    {
+      "stream": 14,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.5294104340801952,
+        "block_frequency": 0.3619663400471833,
+        "runs": 0.9996918145867056,
+        "longest_run": 0.22744613739659508,
+        "approximate_entropy": 0.016300216511928887,
+        "serial_1": 0.2983523358696827,
+        "serial_2": 0.7904060549382393
+      }
+    },
+    {
+      "stream": 14,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7062084404302617,
+        "block_frequency": 0.4919819252812586,
+        "runs": 0.4334263089396728,
+        "longest_run": 0.5391230898761077,
+        "approximate_entropy": 0.701026023277212,
+        "serial_1": 0.35508716146247177,
+        "serial_2": 0.20242590249484033
+      }
+    },
+    {
+      "stream": 15,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.5116632826958679,
+        "block_frequency": 0.2681301025407581,
+        "runs": 0.26456966686134575,
+        "longest_run": 0.8849158623903717,
+        "approximate_entropy": 0.004522627551520236,
+        "serial_1": 0.027095962878544013,
+        "serial_2": 0.07833091119436847
+      }
+    },
+    {
+      "stream": 15,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.44739469379220365,
+        "block_frequency": 0.1068348003144524,
+        "runs": 0.7086939011517693,
+        "longest_run": 0.307993090849987,
+        "approximate_entropy": 0.3833554117663623,
+        "serial_1": 0.49620538848114437,
+        "serial_2": 0.43457429861786484
+      }
+    },
+    {
+      "stream": 16,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.3144832207930266,
+        "block_frequency": 0.19368669426507631,
+        "runs": 0.14537394142334525,
+        "longest_run": 0.2641149658348389,
+        "approximate_entropy": 0.677752850715746,
+        "serial_1": 0.4170427245055844,
+        "serial_2": 0.10657744939485911
+      }
+    },
+    {
+      "stream": 16,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.22742010938637536,
+        "block_frequency": 0.3052878255684507,
+        "runs": 0.555650506449977,
+        "longest_run": 0.5472479238944836,
+        "approximate_entropy": 0.8676188607269738,
+        "serial_1": 0.9176851417007343,
+        "serial_2": 0.9251554300721202
+      }
+    },
+    {
+      "stream": 17,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6267345414502332,
+        "block_frequency": 0.9637577143301422,
+        "runs": 0.29616574154789016,
+        "longest_run": 0.10896072001993087,
+        "approximate_entropy": 0.7186142053037298,
+        "serial_1": 0.09347956066252676,
+        "serial_2": 0.1444183066515905
+      }
+    },
+    {
+      "stream": 17,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9346218632834856,
+        "block_frequency": 0.6049455993345303,
+        "runs": 0.531966742511908,
+        "longest_run": 0.3486060287352466,
+        "approximate_entropy": 0.336715885082508,
+        "serial_1": 0.353990516539717,
+        "serial_2": 0.6608755893010347
+      }
+    },
+    {
+      "stream": 18,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8010772959582804,
+        "block_frequency": 0.49139776305339705,
+        "runs": 0.6859488245878198,
+        "longest_run": 0.5126792779623079,
+        "approximate_entropy": 0.1609732040467897,
+        "serial_1": 0.33473917698593764,
+        "serial_2": 0.7231080578200804
+      }
+    },
+    {
+      "stream": 18,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.19133479256245406,
+        "block_frequency": 0.15882097568549128,
+        "runs": 0.9830872476891391,
+        "longest_run": 0.16669783233695348,
+        "approximate_entropy": 0.3680541159562481,
+        "serial_1": 0.5913691229131937,
+        "serial_2": 0.6797551367751403
+      }
+    },
+    {
+      "stream": 19,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9315161010752993,
+        "block_frequency": 0.25721691196238944,
+        "runs": 0.5884918393635391,
+        "longest_run": 0.2609225697339464,
+        "approximate_entropy": 0.9917635982197599,
+        "serial_1": 0.8887209370463849,
+        "serial_2": 0.5173322394245501
+      }
+    },
+    {
+      "stream": 19,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4819778535265856,
+        "block_frequency": 0.7561930910452642,
+        "runs": 0.6098772634468672,
+        "longest_run": 0.32535340189179723,
+        "approximate_entropy": 0.035639841996690264,
+        "serial_1": 0.5694642148836409,
+        "serial_2": 0.6531931585121956
+      }
+    },
+    {
+      "stream": 20,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6033903266339048,
+        "block_frequency": 0.20982555965474328,
+        "runs": 0.25472995124054254,
+        "longest_run": 0.033941193231105025,
+        "approximate_entropy": 0.14849268301269594,
+        "serial_1": 0.07476074115389511,
+        "serial_2": 0.034278341021891055
+      }
+    },
+    {
+      "stream": 20,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7591169280421133,
+        "block_frequency": 0.5636446221367576,
+        "runs": 0.08321478686609995,
+        "longest_run": 0.7542378091486119,
+        "approximate_entropy": 0.7063477018790931,
+        "serial_1": 0.3582165287232092,
+        "serial_2": 0.5675868871672699
+      }
+    },
+    {
+      "stream": 21,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6518656784605344,
+        "block_frequency": 0.9793095169188529,
+        "runs": 0.7002637284383609,
+        "longest_run": 0.2788957162144379,
+        "approximate_entropy": 0.4256702166142439,
+        "serial_1": 0.6743849644564333,
+        "serial_2": 0.7464140736324655
+      }
+    },
+    {
+      "stream": 21,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.947054394408222,
+        "block_frequency": 0.40827302199610577,
+        "runs": 0.4427353012951631,
+        "longest_run": 0.18690170179117763,
+        "approximate_entropy": 0.9225067502083653,
+        "serial_1": 0.9309927931376496,
+        "serial_2": 0.7696812757605153
+      }
+    },
+    {
+      "stream": 22,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9408363266540563,
+        "block_frequency": 0.904638426876589,
+        "runs": 0.9999957079242474,
+        "longest_run": 0.2706570300598604,
+        "approximate_entropy": 0.437554208131918,
+        "serial_1": 0.8722090223473246,
+        "serial_2": 0.9212087497632929
+      }
+    },
+    {
+      "stream": 22,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.11634242753004592,
+        "block_frequency": 0.10929595141483861,
+        "runs": 0.1332258489368023,
+        "longest_run": 0.661326654723712,
+        "approximate_entropy": 0.07792649179999322,
+        "serial_1": 0.03529676600798641,
+        "serial_2": 0.48105935210257783
+      }
+    },
+    {
+      "stream": 23,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6322832559452686,
+        "block_frequency": 0.006213608103927703,
+        "runs": 0.706374565659281,
+        "longest_run": 0.8381931747120451,
+        "approximate_entropy": 0.43387358671112686,
+        "serial_1": 0.9525318625683336,
+        "serial_2": 0.9394985358298136
+      }
+    },
+    {
+      "stream": 23,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.618451003489607,
+        "block_frequency": 0.9577752024531123,
+        "runs": 0.6647593454739938,
+        "longest_run": 0.9169088440576951,
+        "approximate_entropy": 0.45562389867890474,
+        "serial_1": 0.9293542129528142,
+        "serial_2": 0.5717133037685996
+      }
+    },
+    {
+      "stream": 24,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.1528067294592772,
+        "block_frequency": 0.1431611458723113,
+        "runs": 0.7950773292753641,
+        "longest_run": 0.5930758488872996,
+        "approximate_entropy": 0.7880330516446551,
+        "serial_1": 0.7019965923833439,
+        "serial_2": 0.7925614007832619
+      }
+    },
+    {
+      "stream": 24,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.1953471814646167,
+        "block_frequency": 0.7237669280177658,
+        "runs": 0.9204037592588402,
+        "longest_run": 0.0026086663174620297,
+        "approximate_entropy": 0.7881070412521377,
+        "serial_1": 0.8757397358709353,
+        "serial_2": 0.9402297765319989
+      }
+    },
+    {
+      "stream": 25,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8390373318566402,
+        "block_frequency": 0.7626241788936652,
+        "runs": 0.4404437366251184,
+        "longest_run": 0.9554276146881568,
+        "approximate_entropy": 0.7104795426757258,
+        "serial_1": 0.9259538574305192,
+        "serial_2": 0.7439606951931279
+      }
+    },
+    {
+      "stream": 25,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.0681190080540706,
+        "block_frequency": 0.32182160435965435,
+        "runs": 0.32047253296724104,
+        "longest_run": 0.13709126669220728,
+        "approximate_entropy": 0.16291869971031075,
+        "serial_1": 0.10114383326916519,
+        "serial_2": 0.49670122576136677
+      }
+    },
+    {
+      "stream": 26,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7428171522234015,
+        "block_frequency": 0.9572125997603954,
+        "runs": 0.77095893437679,
+        "longest_run": 0.5130458217486003,
+        "approximate_entropy": 0.4312467307367407,
+        "serial_1": 0.07827542008411782,
+        "serial_2": 0.09058788075232235
+      }
+    },
+    {
+      "stream": 26,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.68743106101052,
+        "block_frequency": 0.5382073200590836,
+        "runs": 0.7515741632897991,
+        "longest_run": 0.39966701934349225,
+        "approximate_entropy": 0.42614385691090945,
+        "serial_1": 0.49003351569243664,
+        "serial_2": 0.6919094352427213
+      }
+    },
+    {
+      "stream": 27,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7770211329745755,
+        "block_frequency": 0.09689662561112927,
+        "runs": 0.5619147222320152,
+        "longest_run": 0.26083110827884926,
+        "approximate_entropy": 0.9437890274617505,
+        "serial_1": 0.7712946675502959,
+        "serial_2": 0.9192326755232834
+      }
+    },
+    {
+      "stream": 27,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8866233746734535,
+        "block_frequency": 0.8195056194380119,
+        "runs": 0.22893562450775828,
+        "longest_run": 0.9514427981305952,
+        "approximate_entropy": 0.5777489238728426,
+        "serial_1": 0.8206804910259831,
+        "serial_2": 0.7906475877514954
+      }
+    },
+    {
+      "stream": 28,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6061163460577584,
+        "block_frequency": 0.3523478248390055,
+        "runs": 0.17722454723241002,
+        "longest_run": 0.45926225423414146,
+        "approximate_entropy": 0.7945375205814332,
+        "serial_1": 0.27053241812764184,
+        "serial_2": 0.42025665819111396
+      }
+    },
+    {
+      "stream": 28,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7251663926230962,
+        "block_frequency": 0.13047291755680362,
+        "runs": 0.3089358186780472,
+        "longest_run": 0.12601082020438287,
+        "approximate_entropy": 0.4825409369745211,
+        "serial_1": 0.11738570368789424,
+        "serial_2": 0.3345628853365438
+      }
+    },
+    {
+      "stream": 29,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4603435579794385,
+        "block_frequency": 0.6303522513226171,
+        "runs": 0.3919969611782867,
+        "longest_run": 0.8185322654169092,
+        "approximate_entropy": 0.9161792743295863,
+        "serial_1": 0.8827479326688428,
+        "serial_2": 0.9668182463029203
+      }
+    },
+    {
+      "stream": 29,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.589843729770828,
+        "block_frequency": 0.7285933980404682,
+        "runs": 0.30808536038759715,
+        "longest_run": 0.5533658694561991,
+        "approximate_entropy": 0.2687330210153058,
+        "serial_1": 0.43406263813911006,
+        "serial_2": 0.7682444371861274
+      }
+    },
+    {
+      "stream": 30,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.3731303826644814,
+        "block_frequency": 0.5987109142039954,
+        "runs": 0.10942364105992425,
+        "longest_run": 0.9070368604566897,
+        "approximate_entropy": 0.8246639308293542,
+        "serial_1": 0.7364150818206715,
+        "serial_2": 0.7781043977662524
+      }
+    },
+    {
+      "stream": 30,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7815161689527843,
+        "block_frequency": 0.10389145837641638,
+        "runs": 0.8467363428704757,
+        "longest_run": 0.6911005308356837,
+        "approximate_entropy": 0.25170058081536206,
+        "serial_1": 0.2934500647952934,
+        "serial_2": 0.44637140737400965
+      }
+    },
+    {
+      "stream": 31,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6845589193679018,
+        "block_frequency": 0.019526248551987157,
+        "runs": 0.01578271934961274,
+        "longest_run": 0.9302170459972517,
+        "approximate_entropy": 0.13750447209625583,
+        "serial_1": 0.1393871353458018,
+        "serial_2": 0.5125571209418275
+      }
+    },
+    {
+      "stream": 31,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.044249592962211336,
+        "block_frequency": 0.9757020919597618,
+        "runs": 0.5898106170007886,
+        "longest_run": 0.1556565076145128,
+        "approximate_entropy": 0.3698484109583165,
+        "serial_1": 0.7846426565113273,
+        "serial_2": 0.7897328822691618
+      }
+    },
+    {
+      "stream": 32,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.772533549822382,
+        "block_frequency": 0.47359985833197304,
+        "runs": 0.9796783019069246,
+        "longest_run": 0.757885512423353,
+        "approximate_entropy": 0.9345041998579555,
+        "serial_1": 0.8036796546403412,
+        "serial_2": 0.6159193121951763
+      }
+    },
+    {
+      "stream": 32,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6845589193679018,
+        "block_frequency": 0.647603232632857,
+        "runs": 0.2230002182470205,
+        "longest_run": 0.09223797398112647,
+        "approximate_entropy": 0.10534547853302523,
+        "serial_1": 0.008870161606046256,
+        "serial_2": 0.027880583674895064
+      }
+    },
+    {
+      "stream": 33,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.06723825744582582,
+        "block_frequency": 0.057727771571764605,
+        "runs": 0.09050702050852229,
+        "longest_run": 0.7776690633502621,
+        "approximate_entropy": 0.25590283198342406,
+        "serial_1": 0.24413110431748558,
+        "serial_2": 0.4941768658647651
+      }
+    },
+    {
+      "stream": 33,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7310343053800854,
+        "block_frequency": 0.9630599566584184,
+        "runs": 0.7296525389108043,
+        "longest_run": 0.6282024734188949,
+        "approximate_entropy": 0.4058627797688906,
+        "serial_1": 0.8189301722546138,
+        "serial_2": 0.7197787053967235
+      }
+    },
+    {
+      "stream": 34,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.3144832207930266,
+        "block_frequency": 0.7782193080097983,
+        "runs": 0.3380641406046983,
+        "longest_run": 0.861433304277408,
+        "approximate_entropy": 0.6541912003824002,
+        "serial_1": 0.7318787200950645,
+        "serial_2": 0.5458311466987644
+      }
+    },
+    {
+      "stream": 34,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6225868002443101,
+        "block_frequency": 0.01747092850462357,
+        "runs": 0.4437585686351606,
+        "longest_run": 0.16486667725128662,
+        "approximate_entropy": 0.31371484395222754,
+        "serial_1": 0.16076914293083008,
+        "serial_2": 0.05942868299143613
+      }
+    },
+    {
+      "stream": 35,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.207753923710004,
+        "block_frequency": 0.6332154767783215,
+        "runs": 0.7737194565674637,
+        "longest_run": 0.7745664082803906,
+        "approximate_entropy": 0.7159027550031136,
+        "serial_1": 0.8150352661908997,
+        "serial_2": 0.9397089551209146
+      }
+    },
+    {
+      "stream": 35,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.39337342654445107,
+        "block_frequency": 0.11271788992758351,
+        "runs": 0.3236229190505555,
+        "longest_run": 0.9502996181805822,
+        "approximate_entropy": 0.6782913170634572,
+        "serial_1": 0.5110374755884454,
+        "serial_2": 0.55392343093869
+      }
+    },
+    {
+      "stream": 36,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.5345379412675861,
+        "block_frequency": 0.9213835142515049,
+        "runs": 0.6819675702161588,
+        "longest_run": 0.3758211777587397,
+        "approximate_entropy": 0.1489683572435529,
+        "serial_1": 0.18672528591451057,
+        "serial_2": 0.2651181442854711
+      }
+    },
+    {
+      "stream": 36,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7251663926230962,
+        "block_frequency": 0.8873307867848568,
+        "runs": 0.08893334027803187,
+        "longest_run": 0.25627717012982376,
+        "approximate_entropy": 0.4491011796105819,
+        "serial_1": 0.4471496245762295,
+        "serial_2": 0.3947921997935669
+      }
+    },
+    {
+      "stream": 37,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4710921893224554,
+        "block_frequency": 0.3624223246705498,
+        "runs": 0.4659874556201241,
+        "longest_run": 0.8937735771577298,
+        "approximate_entropy": 0.5592672955249831,
+        "serial_1": 0.5233047640382006,
+        "serial_2": 0.22513664260405006
+      }
+    },
+    {
+      "stream": 37,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8086348803407306,
+        "block_frequency": 0.7603379544680523,
+        "runs": 0.9672377731653473,
+        "longest_run": 0.4419712117901181,
+        "approximate_entropy": 0.18884864931340942,
+        "serial_1": 0.42309233226555476,
+        "serial_2": 0.6866669110526142
+      }
+    },
+    {
+      "stream": 38,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9781855624466073,
+        "block_frequency": 0.011362883023086003,
+        "runs": 0.5371115408864314,
+        "longest_run": 0.9801330271471894,
+        "approximate_entropy": 0.6653043656004235,
+        "serial_1": 0.5858399140324201,
+        "serial_2": 0.492704141072349
+      }
+    },
+    {
+      "stream": 38,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.49670235249647643,
+        "block_frequency": 0.22739648975160343,
+        "runs": 0.629185746816655,
+        "longest_run": 0.6423864673588175,
+        "approximate_entropy": 0.9253026371780916,
+        "serial_1": 0.9769386598076332,
+        "serial_2": 0.8232765362326533
+      }
+    },
+    {
+      "stream": 39,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.3658380033902945,
+        "block_frequency": 0.07344621479113192,
+        "runs": 0.41696261991134204,
+        "longest_run": 0.6514095875184007,
+        "approximate_entropy": 0.8859409178058181,
+        "serial_1": 0.8592844661375066,
+        "serial_2": 0.8008954113877138
+      }
+    },
+    {
+      "stream": 39,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9315161010752993,
+        "block_frequency": 0.9069666671036278,
+        "runs": 0.6931835344735038,
+        "longest_run": 0.03557926132724316,
+        "approximate_entropy": 0.39799846913841236,
+        "serial_1": 0.03472234287772872,
+        "serial_2": 0.28718096204105964
+      }
+    },
+    {
+      "stream": 40,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.24598519580896178,
+        "block_frequency": 0.4784581227333839,
+        "runs": 0.690778131717172,
+        "longest_run": 0.9377117968405849,
+        "approximate_entropy": 0.6212878916930135,
+        "serial_1": 0.5236705486185288,
+        "serial_2": 0.4776085475112933
+      }
+    },
+    {
+      "stream": 40,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7755244368312049,
+        "block_frequency": 0.5727784112326685,
+        "runs": 0.5320231449845928,
+        "longest_run": 0.1879365947923043,
+        "approximate_entropy": 0.38430102121007015,
+        "serial_1": 0.24694320409937223,
+        "serial_2": 0.7013550307899514
+      }
+    },
+    {
+      "stream": 41,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.42325829558311645,
+        "block_frequency": 0.9063057505866827,
+        "runs": 0.035365963296306806,
+        "longest_run": 0.8495840714484353,
+        "approximate_entropy": 0.06964276196102527,
+        "serial_1": 0.005047422219590333,
+        "serial_2": 0.037663580714105964
+      }
+    },
+    {
+      "stream": 41,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.449733513300905,
+        "block_frequency": 0.37305637781070594,
+        "runs": 0.07182522867140638,
+        "longest_run": 0.05487426893947502,
+        "approximate_entropy": 0.7268934272878054,
+        "serial_1": 0.2084793100963106,
+        "serial_2": 0.047763771657543114
+      }
+    },
+    {
+      "stream": 42,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.04282726934769194,
+        "block_frequency": 0.2579214229583444,
+        "runs": 0.15390106642297974,
+        "longest_run": 0.49110607649391813,
+        "approximate_entropy": 0.7642177767430902,
+        "serial_1": 0.839094592741632,
+        "serial_2": 0.4399651195738719
+      }
+    },
+    {
+      "stream": 42,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7606041707851907,
+        "block_frequency": 0.06922119921412392,
+        "runs": 0.384720597504675,
+        "longest_run": 0.008753803629395006,
+        "approximate_entropy": 0.25054281571119924,
+        "serial_1": 0.2924539252690777,
+        "serial_2": 0.25656176573074235
+      }
+    },
+    {
+      "stream": 43,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.32397212265661424,
+        "block_frequency": 0.612937025800348,
+        "runs": 0.696776648957701,
+        "longest_run": 0.9611550200787674,
+        "approximate_entropy": 0.7610638244555818,
+        "serial_1": 0.5977671998515928,
+        "serial_2": 0.4701011279553833
+      }
+    },
+    {
+      "stream": 43,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.449733513300905,
+        "block_frequency": 0.6861806447906048,
+        "runs": 0.4995336609698002,
+        "longest_run": 0.11200026315144722,
+        "approximate_entropy": 0.523112420205732,
+        "serial_1": 0.26356391273085333,
+        "serial_2": 0.20142876519911046
+      }
+    },
+    {
+      "stream": 44,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.44041988033877727,
+        "block_frequency": 0.056954633723500354,
+        "runs": 0.1474386099719773,
+        "longest_run": 0.7726796980540481,
+        "approximate_entropy": 0.5107813527185244,
+        "serial_1": 0.1374841231789454,
+        "serial_2": 0.053281772448688265
+      }
+    },
+    {
+      "stream": 44,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.09846449537804,
+        "block_frequency": 0.6285012750998407,
+        "runs": 0.7660169476844584,
+        "longest_run": 0.7706490703976607,
+        "approximate_entropy": 0.48882382372972516,
+        "serial_1": 0.7584051272326607,
+        "serial_2": 0.5153287864391728
+      }
+    },
+    {
+      "stream": 45,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.07811682830286315,
+        "block_frequency": 0.5587277763819245,
+        "runs": 0.22483573465869755,
+        "longest_run": 0.5299851386841614,
+        "approximate_entropy": 0.32352361746011954,
+        "serial_1": 0.08917906549741147,
+        "serial_2": 0.20177624605174116
+      }
+    },
+    {
+      "stream": 45,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4991795408697534,
+        "block_frequency": 0.7140751898927818,
+        "runs": 0.8977846908541125,
+        "longest_run": 0.08603849133871139,
+        "approximate_entropy": 0.20630987026589784,
+        "serial_1": 0.6215738769668857,
+        "serial_2": 0.6404307272717443
+      }
+    },
+    {
+      "stream": 46,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6617487760817584,
+        "block_frequency": 0.9216014177412799,
+        "runs": 0.8759832772953219,
+        "longest_run": 0.5359041805240863,
+        "approximate_entropy": 0.022229249397806475,
+        "serial_1": 0.4753200948921833,
+        "serial_2": 0.24523515743440277
+      }
+    },
+    {
+      "stream": 46,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8451483119295096,
+        "block_frequency": 0.6559413331319449,
+        "runs": 0.49915586999123485,
+        "longest_run": 0.4924719332545603,
+        "approximate_entropy": 0.9771171848280353,
+        "serial_1": 0.9362074793204206,
+        "serial_2": 0.8446258841725004
+      }
+    },
+    {
+      "stream": 47,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.10839068506562463,
+        "block_frequency": 0.2710155042579559,
+        "runs": 0.5082615792062004,
+        "longest_run": 0.9309518781359344,
+        "approximate_entropy": 0.56735974130387,
+        "serial_1": 0.5870285119228739,
+        "serial_2": 0.8804498851548586
+      }
+    },
+    {
+      "stream": 47,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.5116632826958679,
+        "block_frequency": 0.7866911505286941,
+        "runs": 0.6305950230435797,
+        "longest_run": 0.25852997848557224,
+        "approximate_entropy": 0.14108071103335607,
+        "serial_1": 0.37087275077400994,
+        "serial_2": 0.7515721114512665
+      }
+    },
+    {
+      "stream": 48,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.5871513187595199,
+        "block_frequency": 0.19602067658862893,
+        "runs": 0.7088992155556699,
+        "longest_run": 0.7498217037438986,
+        "approximate_entropy": 0.35272897395789776,
+        "serial_1": 0.5138664639302023,
+        "serial_2": 0.0685689741959371
+      }
+    },
+    {
+      "stream": 48,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7502123504359396,
+        "block_frequency": 0.9600092521602698,
+        "runs": 0.2598041063314223,
+        "longest_run": 0.8923184384172662,
+        "approximate_entropy": 0.3353189194985848,
+        "serial_1": 0.20873367610709043,
+        "serial_2": 0.30280067633640895
+      }
+    },
+    {
+      "stream": 49,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.44041988033877727,
+        "block_frequency": 0.2783787165791108,
+        "runs": 0.7124560164115968,
+        "longest_run": 0.48739722200032887,
+        "approximate_entropy": 0.20831530225427866,
+        "serial_1": 0.14895653159140496,
+        "serial_2": 0.3688564743310307
+      }
+    },
+    {
+      "stream": 49,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4289348736365354,
+        "block_frequency": 0.2949022387814245,
+        "runs": 0.39915045070493593,
+        "longest_run": 0.0009982276724709385,
+        "approximate_entropy": 0.5042277222780953,
+        "serial_1": 0.5402296079155496,
+        "serial_2": 0.4646878702838999
+      }
+    },
+    {
+      "stream": 50,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.14190061027798062,
+        "block_frequency": 0.9246045200158152,
+        "runs": 0.1053832687779529,
+        "longest_run": 0.9539864844128274,
+        "approximate_entropy": 0.7289997213409481,
+        "serial_1": 0.944812347562537,
+        "serial_2": 0.9603237116869432
+      }
+    },
+    {
+      "stream": 50,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8238030539991208,
+        "block_frequency": 0.7846808263734457,
+        "runs": 0.009820687786040266,
+        "longest_run": 0.8097049502713037,
+        "approximate_entropy": 0.30127194012286584,
+        "serial_1": 0.09708787756520237,
+        "serial_2": 0.050964526836755335
+      }
+    },
+    {
+      "stream": 51,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.2524033856346112,
+        "block_frequency": 0.056653155449184964,
+        "runs": 0.5675981021750883,
+        "longest_run": 0.9439470570744188,
+        "approximate_entropy": 0.5410623405266405,
+        "serial_1": 0.42565622654453267,
+        "serial_2": 0.3242665146570869
+      }
+    },
+    {
+      "stream": 51,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7163947983137723,
+        "block_frequency": 0.3623311116449921,
+        "runs": 0.6062063349815128,
+        "longest_run": 0.9668496279129636,
+        "approximate_entropy": 0.8494177814834453,
+        "serial_1": 0.7880259455555725,
+        "serial_2": 0.7981682772174186
+      }
+    },
+    {
+      "stream": 52,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.08181787194039296,
+        "block_frequency": 0.42242567338704623,
+        "runs": 0.774754515066185,
+        "longest_run": 0.7462871608457187,
+        "approximate_entropy": 0.39737107413274136,
+        "serial_1": 0.8157877868364669,
+        "serial_2": 0.6429629066558828
+      }
+    },
+    {
+      "stream": 52,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4698911005696458,
+        "block_frequency": 0.6292420135886215,
+        "runs": 0.557574640986093,
+        "longest_run": 0.5917797161942533,
+        "approximate_entropy": 0.9332574488621835,
+        "serial_1": 0.7204594322823159,
+        "serial_2": 0.16811565377332358
+      }
+    },
+    {
+      "stream": 53,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4639111111441018,
+        "block_frequency": 0.08804370799550668,
+        "runs": 0.4326689035355952,
+        "longest_run": 0.9861385420263518,
+        "approximate_entropy": 0.6134843201075589,
+        "serial_1": 0.30932935457856053,
+        "serial_2": 0.03239871380812817
+      }
+    },
+    {
+      "stream": 53,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.060524518708689246,
+        "block_frequency": 0.7119839175280226,
+        "runs": 0.8808235803618496,
+        "longest_run": 0.2333486525131163,
+        "approximate_entropy": 0.5295305394276215,
+        "serial_1": 0.5113057318467602,
+        "serial_2": 0.2637685168662779
+      }
+    },
+    {
+      "stream": 54,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.3794521096128324,
+        "block_frequency": 0.6521436732462236,
+        "runs": 0.570604775616042,
+        "longest_run": 0.6183969695949532,
+        "approximate_entropy": 0.44631769955747697,
+        "serial_1": 0.278487882905025,
+        "serial_2": 0.401980684285087
+      }
+    },
+    {
+      "stream": 54,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.015523841903040084,
+        "block_frequency": 0.08819765410717362,
+        "runs": 0.8575075103047731,
+        "longest_run": 0.8849076661484729,
+        "approximate_entropy": 0.4561789600135815,
+        "serial_1": 0.42724872964434857,
+        "serial_2": 0.7120400657649247
+      }
+    },
+    {
+      "stream": 55,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.2389025182370701,
+        "block_frequency": 0.969618146871814,
+        "runs": 0.42517543084658316,
+        "longest_run": 0.9538239654517546,
+        "approximate_entropy": 0.8540164326415466,
+        "serial_1": 0.6076496697181455,
+        "serial_2": 0.6727965890220245
+      }
+    },
+    {
+      "stream": 55,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.736917997790598,
+        "block_frequency": 0.07057557351130442,
+        "runs": 0.7311171683570606,
+        "longest_run": 0.5297381415435827,
+        "approximate_entropy": 0.7227412042771948,
+        "serial_1": 0.6069609139892546,
+        "serial_2": 0.6898856000838647
+      }
+    },
+    {
+      "stream": 56,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.3944569604469804,
+        "block_frequency": 0.07779706175186805,
+        "runs": 0.20330440580574194,
+        "longest_run": 0.8149805763958067,
+        "approximate_entropy": 0.09246092831972179,
+        "serial_1": 0.5689806987360201,
+        "serial_2": 0.6009003636907492
+      }
+    },
+    {
+      "stream": 56,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.03879013628986079,
+        "block_frequency": 0.4648669043303379,
+        "runs": 0.841884730385294,
+        "longest_run": 0.47263063844281406,
+        "approximate_entropy": 0.7198958885045812,
+        "serial_1": 0.6660162472683325,
+        "serial_2": 0.8180517374263147
+      }
+    },
+    {
+      "stream": 57,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6476485841456787,
+        "block_frequency": 0.6745173634816971,
+        "runs": 0.41415111289708184,
+        "longest_run": 0.24692628795732757,
+        "approximate_entropy": 0.8846236513785948,
+        "serial_1": 0.7946764227135404,
+        "serial_2": 0.3027494279148481
+      }
+    },
+    {
+      "stream": 57,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.5141794426659709,
+        "block_frequency": 0.7954631907815743,
+        "runs": 0.914124597809877,
+        "longest_run": 0.7457290978439237,
+        "approximate_entropy": 0.08855329172194314,
+        "serial_1": 0.06028345837325361,
+        "serial_2": 0.14362060377380392
+      }
+    },
+    {
+      "stream": 58,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7237019169635771,
+        "block_frequency": 0.2741590349233923,
+        "runs": 0.7666550971951414,
+        "longest_run": 0.879198859767528,
+        "approximate_entropy": 0.01749244354869889,
+        "serial_1": 0.23410221742989618,
+        "serial_2": 0.4963996225763313
+      }
+    },
+    {
+      "stream": 58,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8192454104489041,
+        "block_frequency": 0.08359261867822816,
+        "runs": 0.9407957471772568,
+        "longest_run": 0.059214657108019264,
+        "approximate_entropy": 0.9909546201129544,
+        "serial_1": 0.9516955608275891,
+        "serial_2": 0.9939648126355034
+      }
+    },
+    {
+      "stream": 59,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9594998319301961,
+        "block_frequency": 0.7763848137629147,
+        "runs": 0.43236343821743084,
+        "longest_run": 0.05452447613867103,
+        "approximate_entropy": 0.4344535328820576,
+        "serial_1": 0.7575210521460369,
+        "serial_2": 0.6422046245936868
+      }
+    },
+    {
+      "stream": 59,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7710393694257456,
+        "block_frequency": 0.4884773873312289,
+        "runs": 0.13158131885152174,
+        "longest_run": 0.4318454080423213,
+        "approximate_entropy": 0.16862657948567597,
+        "serial_1": 0.1738431345916029,
+        "serial_2": 0.09712295451840121
+      }
+    },
+    {
+      "stream": 60,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7004110693288848,
+        "block_frequency": 0.16426411709166794,
+        "runs": 0.5672399143419896,
+        "longest_run": 0.6811022069629797,
+        "approximate_entropy": 0.8003666452003937,
+        "serial_1": 0.9015814425212966,
+        "serial_2": 0.7174688736828867
+      }
+    },
+    {
+      "stream": 60,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6490530348048495,
+        "block_frequency": 0.27496800983925773,
+        "runs": 0.7046072446669028,
+        "longest_run": 0.3462735205761494,
+        "approximate_entropy": 0.027803649162209072,
+        "serial_1": 0.2703747502979614,
+        "serial_2": 0.0866621500810633
+      }
+    },
+    {
+      "stream": 61,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.524308058110728,
+        "block_frequency": 0.2828766152110362,
+        "runs": 0.37020533164843045,
+        "longest_run": 0.6704302923781542,
+        "approximate_entropy": 0.153602981998006,
+        "serial_1": 0.37967489503447804,
+        "serial_2": 0.564589841249955
+      }
+    },
+    {
+      "stream": 61,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8573979072712525,
+        "block_frequency": 0.046571221532319344,
+        "runs": 0.05011830245136975,
+        "longest_run": 0.6914449730843275,
+        "approximate_entropy": 0.58413991456011,
+        "serial_1": 0.18755639676633218,
+        "serial_2": 0.5533894682470941
+      }
+    },
+    {
+      "stream": 62,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.16852674076925797,
+        "block_frequency": 0.1436527931557415,
+        "runs": 0.6574317876077955,
+        "longest_run": 0.6400639264948429,
+        "approximate_entropy": 0.849205578152243,
+        "serial_1": 0.5207441322218651,
+        "serial_2": 0.1353210169510846
+      }
+    },
+    {
+      "stream": 62,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6088478616475532,
+        "block_frequency": 0.22289052288668051,
+        "runs": 0.9177566752388834,
+        "longest_run": 0.2182735196963143,
+        "approximate_entropy": 0.15368869288397055,
+        "serial_1": 0.6188063649660376,
+        "serial_2": 0.850867077002218
+      }
+    },
+    {
+      "stream": 63,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.09454897350246551,
+        "block_frequency": 0.8487606799265602,
+        "runs": 0.7555541458314305,
+        "longest_run": 0.17990078947856028,
+        "approximate_entropy": 0.2563008405789849,
+        "serial_1": 0.2571445162817315,
+        "serial_2": 0.2096660509119362
+      }
+    },
+    {
+      "stream": 63,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.2515947887085427,
+        "block_frequency": 0.31135714852628504,
+        "runs": 0.8248020854690332,
+        "longest_run": 0.10189961457888021,
+        "approximate_entropy": 0.4191927223309059,
+        "serial_1": 0.5995930169923424,
+        "serial_2": 0.349026386504934
+      }
+    },
+    {
+      "stream": 64,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8314122749396199,
+        "block_frequency": 0.35750845009056526,
+        "runs": 0.1209647101214321,
+        "longest_run": 0.4930685957800416,
+        "approximate_entropy": 0.6214808575970713,
+        "serial_1": 0.17456061436414788,
+        "serial_2": 0.14951664632337977
+      }
+    },
+    {
+      "stream": 64,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.2630801509327425,
+        "block_frequency": 0.9581321353683019,
+        "runs": 0.623451226818047,
+        "longest_run": 0.531655334695619,
+        "approximate_entropy": 0.7244250325962345,
+        "serial_1": 0.41318366395191874,
+        "serial_2": 0.3820771043532225
+      }
+    },
+    {
+      "stream": 65,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.591192065380774,
+        "block_frequency": 0.016106683082698765,
+        "runs": 0.3889021182961969,
+        "longest_run": 0.40347288721953833,
+        "approximate_entropy": 0.5278454117403178,
+        "serial_1": 0.47169517373190784,
+        "serial_2": 0.6626336498613417
+      }
+    },
+    {
+      "stream": 65,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4722949699457089,
+        "block_frequency": 0.7249979103337851,
+        "runs": 0.9334699412532275,
+        "longest_run": 0.618904728290173,
+        "approximate_entropy": 0.6242171491898562,
+        "serial_1": 0.7588955686200352,
+        "serial_2": 0.677351254514822
+      }
+    },
+    {
+      "stream": 66,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.45915779293600595,
+        "block_frequency": 0.3158358682598002,
+        "runs": 0.5575577603545463,
+        "longest_run": 0.4595335929232085,
+        "approximate_entropy": 0.2348675237566217,
+        "serial_1": 0.2334664982682523,
+        "serial_2": 0.1422173184699868
+      }
+    },
+    {
+      "stream": 66,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.217063200328942,
+        "block_frequency": 0.39134274979381667,
+        "runs": 0.6906501446016422,
+        "longest_run": 0.03999630901260513,
+        "approximate_entropy": 0.9317468934852987,
+        "serial_1": 0.8348449403148883,
+        "serial_2": 0.6228015415133207
+      }
+    },
+    {
+      "stream": 67,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6504587343286549,
+        "block_frequency": 0.11471426241423668,
+        "runs": 0.7060593792990667,
+        "longest_run": 0.18544583079155286,
+        "approximate_entropy": 0.38285888027225473,
+        "serial_1": 0.4961323170608517,
+        "serial_2": 0.7075966268858175
+      }
+    },
+    {
+      "stream": 67,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.5294104340801952,
+        "block_frequency": 0.05583737106486028,
+        "runs": 0.20930688751037224,
+        "longest_run": 0.08990490982119977,
+        "approximate_entropy": 0.6696635036247518,
+        "serial_1": 0.9793174040218527,
+        "serial_2": 0.5513392471149252
+      }
+    },
+    {
+      "stream": 68,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9036167795249493,
+        "block_frequency": 0.33606001907966293,
+        "runs": 0.7770321065522319,
+        "longest_run": 0.9396531189552861,
+        "approximate_entropy": 0.2744599493502263,
+        "serial_1": 0.25972114086199105,
+        "serial_2": 0.4680560463748563
+      }
+    },
+    {
+      "stream": 68,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.35761358668049115,
+        "block_frequency": 0.454895936848978,
+        "runs": 0.18973131846853727,
+        "longest_run": 0.05056997354392686,
+        "approximate_entropy": 0.984795752633887,
+        "serial_1": 0.9518860338455553,
+        "serial_2": 0.5408537704299017
+      }
+    },
+    {
+      "stream": 69,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.2214595578590129,
+        "block_frequency": 0.5529325196293937,
+        "runs": 0.7976782655220969,
+        "longest_run": 0.8466506679504882,
+        "approximate_entropy": 0.9400821774788365,
+        "serial_1": 0.8732112454904819,
+        "serial_2": 0.628728027647817
+      }
+    },
+    {
+      "stream": 69,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.3336455869758579,
+        "block_frequency": 0.8679621997721968,
+        "runs": 0.7054352014975173,
+        "longest_run": 0.795793747209052,
+        "approximate_entropy": 0.9371821842171961,
+        "serial_1": 0.7049240652163322,
+        "serial_2": 0.24378802145817963
+      }
+    },
+    {
+      "stream": 70,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.021849804147878488,
+        "block_frequency": 0.006845508066915799,
+        "runs": 0.5482814769508424,
+        "longest_run": 0.5393634036215671,
+        "approximate_entropy": 0.0034100269350815808,
+        "serial_1": 0.04792017164623888,
+        "serial_2": 0.37565841325452953
+      }
+    },
+    {
+      "stream": 70,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9501646619415056,
+        "block_frequency": 0.4124402174322371,
+        "runs": 0.7266347364754714,
+        "longest_run": 0.08067256167069987,
+        "approximate_entropy": 0.17106147075484437,
+        "serial_1": 0.38107617409033334,
+        "serial_2": 0.5221773482605621
+      }
+    },
+    {
+      "stream": 71,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9813012925396509,
+        "block_frequency": 0.7202234624051215,
+        "runs": 0.20217120482777887,
+        "longest_run": 0.2658770682335845,
+        "approximate_entropy": 0.6037077267100284,
+        "serial_1": 0.5112691513030017,
+        "serial_2": 0.7592053595017145
+      }
+    },
+    {
+      "stream": 71,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.40649461407543686,
+        "block_frequency": 0.8615196372440351,
+        "runs": 0.10485309765675038,
+        "longest_run": 0.7219807686394393,
+        "approximate_entropy": 0.46185955146964053,
+        "serial_1": 0.4906905980199887,
+        "serial_2": 0.6743093329705234
+      }
+    },
+    {
+      "stream": 72,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.4831957595460245,
+        "block_frequency": 0.530923080185791,
+        "runs": 0.47924854390754795,
+        "longest_run": 0.947638002293373,
+        "approximate_entropy": 0.9065186346484819,
+        "serial_1": 0.855975500331506,
+        "serial_2": 0.8705956938599629
+      }
+    },
+    {
+      "stream": 72,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9408363266540563,
+        "block_frequency": 0.5509983874684763,
+        "runs": 0.9330731314341388,
+        "longest_run": 0.25596218160853496,
+        "approximate_entropy": 0.9097836536773419,
+        "serial_1": 0.42497926568067307,
+        "serial_2": 0.30712826970904633
+      }
+    },
+    {
+      "stream": 73,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7995679861901681,
+        "block_frequency": 0.2787861464877799,
+        "runs": 0.2749500428948317,
+        "longest_run": 0.05143721178741905,
+        "approximate_entropy": 0.9321098279027161,
+        "serial_1": 0.49642460684370043,
+        "serial_2": 0.4945214213678045
+      }
+    },
+    {
+      "stream": 73,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8207639546873957,
+        "block_frequency": 0.05910072581513621,
+        "runs": 0.7844783914894267,
+        "longest_run": 0.7044537201858121,
+        "approximate_entropy": 0.43747019994966924,
+        "serial_1": 0.21602898277054788,
+        "serial_2": 0.46417531312194527
+      }
+    },
+    {
+      "stream": 74,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7076604666545524,
+        "block_frequency": 0.4920792882247006,
+        "runs": 0.21063693178922066,
+        "longest_run": 0.13009981319951772,
+        "approximate_entropy": 0.26293184657752694,
+        "serial_1": 0.24721510438869784,
+        "serial_2": 0.8145231074506546
+      }
+    },
+    {
+      "stream": 74,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.03491222565674984,
+        "block_frequency": 0.9042182308834779,
+        "runs": 0.25141130889073865,
+        "longest_run": 0.746017414237713,
+        "approximate_entropy": 0.12447456847532445,
+        "serial_1": 0.04546176706920472,
+        "serial_2": 0.013348301574165684
+      }
+    },
+    {
+      "stream": 75,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.13979295008423864,
+        "block_frequency": 0.2202979899139235,
+        "runs": 0.3647094124989452,
+        "longest_run": 0.6788752805652929,
+        "approximate_entropy": 0.9639147424671589,
+        "serial_1": 0.8675169640558643,
+        "serial_2": 0.3689843752036242
+      }
+    },
+    {
+      "stream": 75,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.47349944022790197,
+        "block_frequency": 0.9204706769689908,
+        "runs": 0.2449870814967745,
+        "longest_run": 0.8174920309661187,
+        "approximate_entropy": 0.9222730226464648,
+        "serial_1": 0.7918057680365126,
+        "serial_2": 0.6195444421233497
+      }
+    },
+    {
+      "stream": 76,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8850809815732072,
+        "block_frequency": 0.6437733589242142,
+        "runs": 0.9548477220223839,
+        "longest_run": 0.4077945669364001,
+        "approximate_entropy": 0.24205315976607894,
+        "serial_1": 0.37774819993180464,
+        "serial_2": 0.33793207431632444
+      }
+    },
+    {
+      "stream": 76,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7004110693288848,
+        "block_frequency": 0.815854713334906,
+        "runs": 0.2793028184889974,
+        "longest_run": 0.23440937378807258,
+        "approximate_entropy": 0.8296964067003713,
+        "serial_1": 0.8447168722717918,
+        "serial_2": 0.7368928980988692
+      }
+    },
+    {
+      "stream": 77,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.39554229799069923,
+        "block_frequency": 0.027375363459475405,
+        "runs": 0.051120328164206266,
+        "longest_run": 0.7839475116753366,
+        "approximate_entropy": 0.0049941041629786714,
+        "serial_1": 0.1385333318458365,
+        "serial_2": 0.5737959884074921
+      }
+    },
+    {
+      "stream": 77,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.47712296667299137,
+        "block_frequency": 0.22188022824612724,
+        "runs": 0.783395240325611,
+        "longest_run": 0.9149205164378104,
+        "approximate_entropy": 0.6413375785385067,
+        "serial_1": 0.7840604959284221,
+        "serial_2": 0.6182363224108023
+      }
+    },
+    {
+      "stream": 78,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8681446538335948,
+        "block_frequency": 0.4845848871779776,
+        "runs": 0.08181313984836033,
+        "longest_run": 0.6933300114163139,
+        "approximate_entropy": 0.6413342161591307,
+        "serial_1": 0.38969422428248857,
+        "serial_2": 0.17915240097463603
+      }
+    },
+    {
+      "stream": 78,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.051737378585670665,
+        "block_frequency": 0.9120522897609816,
+        "runs": 0.6008151213043271,
+        "longest_run": 0.05355480886838041,
+        "approximate_entropy": 0.025994352157258527,
+        "serial_1": 0.018138417539238675,
+        "serial_2": 0.3573850838305488
+      }
+    },
+    {
+      "stream": 79,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8712197236675658,
+        "block_frequency": 0.840097874756799,
+        "runs": 0.5540037935077122,
+        "longest_run": 0.9221547641301752,
+        "approximate_entropy": 0.9053656168865829,
+        "serial_1": 0.8526533679162246,
+        "serial_2": 0.4824680713762603
+      }
+    },
+    {
+      "stream": 79,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6617487760817584,
+        "block_frequency": 0.4472689385684678,
+        "runs": 0.7177144106821041,
+        "longest_run": 0.9089227964689811,
+        "approximate_entropy": 0.8311800728286187,
+        "serial_1": 0.862269123056642,
+        "serial_2": 0.6717787046692691
+      }
+    },
+    {
+      "stream": 80,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6020293875096527,
+        "block_frequency": 0.05383869686737458,
+        "runs": 0.8729671594316459,
+        "longest_run": 0.65752638109039,
+        "approximate_entropy": 0.340917453856619,
+        "serial_1": 0.32852460126862837,
+        "serial_2": 0.25906159361903347
+      }
+    },
+    {
+      "stream": 80,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.5230364128395105,
+        "block_frequency": 0.5322835592321866,
+        "runs": 0.12293489676444688,
+        "longest_run": 0.9508713998528995,
+        "approximate_entropy": 0.611916634401421,
+        "serial_1": 0.5378797753950872,
+        "serial_2": 0.6254839739861829
+      }
+    },
+    {
+      "stream": 81,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6143272583686876,
+        "block_frequency": 0.18549191465821258,
+        "runs": 0.2979832782169215,
+        "longest_run": 0.06397545397860331,
+        "approximate_entropy": 0.6803890841470678,
+        "serial_1": 0.9569823771538499,
+        "serial_2": 0.700820865893603
+      }
+    },
+    {
+      "stream": 81,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.636458444378686,
+        "block_frequency": 0.669910662724112,
+        "runs": 0.4265319454764476,
+        "longest_run": 0.13158816274076454,
+        "approximate_entropy": 0.5708585594404368,
+        "serial_1": 0.3156972038087128,
+        "serial_2": 0.5661101385148936
+      }
+    },
+    {
+      "stream": 82,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7875208976572069,
+        "block_frequency": 0.43630057816413864,
+        "runs": 0.46267696284940846,
+        "longest_run": 0.1094545464634128,
+        "approximate_entropy": 0.6930136173107365,
+        "serial_1": 0.5653881850230038,
+        "serial_2": 0.3320420442691778
+      }
+    },
+    {
+      "stream": 82,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.17839827816696674,
+        "block_frequency": 0.5487727611630288,
+        "runs": 0.7002737629589244,
+        "longest_run": 0.45389260004935117,
+        "approximate_entropy": 0.8949611206620779,
+        "serial_1": 0.6999151756300236,
+        "serial_2": 0.5434938058658636
+      }
+    },
+    {
+      "stream": 83,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.546165724210747,
+        "block_frequency": 0.9093742521386406,
+        "runs": 0.7662903106037361,
+        "longest_run": 0.1408968671821989,
+        "approximate_entropy": 0.3557331196442652,
+        "serial_1": 0.10103616418899475,
+        "serial_2": 0.31919273403275
+      }
+    },
+    {
+      "stream": 83,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.629506284618596,
+        "block_frequency": 0.13508339767130167,
+        "runs": 0.6238071829429639,
+        "longest_run": 0.1358969012650763,
+        "approximate_entropy": 0.5456502521481894,
+        "serial_1": 0.8984753483400804,
+        "serial_2": 0.160144728035587
+      }
+    },
+    {
+      "stream": 84,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.2614175868363686,
+        "block_frequency": 0.6434992510520879,
+        "runs": 0.43423079906832596,
+        "longest_run": 0.26043181195018866,
+        "approximate_entropy": 0.5514289374416711,
+        "serial_1": 0.6038699388664184,
+        "serial_2": 0.42836041098904876
+      }
+    },
+    {
+      "stream": 84,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7576305757528659,
+        "block_frequency": 0.6490584375631518,
+        "runs": 0.2491416045393105,
+        "longest_run": 0.8072405223119785,
+        "approximate_entropy": 0.6115920011334548,
+        "serial_1": 0.17205426273846852,
+        "serial_2": 0.1478330481071055
+      }
+    },
+    {
+      "stream": 85,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.3679124081342874,
+        "block_frequency": 0.49743519739065845,
+        "runs": 0.874920515855867,
+        "longest_run": 0.006532777985950607,
+        "approximate_entropy": 0.6365784109024721,
+        "serial_1": 0.533251073217517,
+        "serial_2": 0.4161625755608632
+      }
+    },
+    {
+      "stream": 85,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.15907093119455412,
+        "block_frequency": 0.141043945328028,
+        "runs": 0.8681574439409976,
+        "longest_run": 0.13243318997120268,
+        "approximate_entropy": 0.5905315205287621,
+        "serial_1": 0.2587580592723426,
+        "serial_2": 0.6936702278994583
+      }
+    },
+    {
+      "stream": 86,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.1062599490501667,
+        "block_frequency": 0.7938523229623623,
+        "runs": 0.8646035595193874,
+        "longest_run": 0.9045097558504779,
+        "approximate_entropy": 0.6625853729041875,
+        "serial_1": 0.2976584295393141,
+        "serial_2": 0.4603940298030391
+      }
+    },
+    {
+      "stream": 86,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9735126061083962,
+        "block_frequency": 0.8835501178193509,
+        "runs": 0.17402744751550178,
+        "longest_run": 0.45793168342955337,
+        "approximate_entropy": 0.800221591458514,
+        "serial_1": 0.5854916182492556,
+        "serial_2": 0.3360763995819986
+      }
+    },
+    {
+      "stream": 87,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7413409315239896,
+        "block_frequency": 0.3067361633660809,
+        "runs": 0.012084763026557909,
+        "longest_run": 0.10655910845753083,
+        "approximate_entropy": 0.01179143987715881,
+        "serial_1": 0.003911952823808089,
+        "serial_2": 0.01841531150547208
+      }
+    },
+    {
+      "stream": 87,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6006698338286787,
+        "block_frequency": 0.6223728300864959,
+        "runs": 0.6743469880981372,
+        "longest_run": 0.47078989172432906,
+        "approximate_entropy": 0.17901217552920712,
+        "serial_1": 0.49469538862712276,
+        "serial_2": 0.5726305394524124
+      }
+    },
+    {
+      "stream": 88,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6061163460577584,
+        "block_frequency": 0.7145760389773379,
+        "runs": 0.35037940362605685,
+        "longest_run": 0.5614858860573355,
+        "approximate_entropy": 0.4852985046207527,
+        "serial_1": 0.361920376061053,
+        "serial_2": 0.21321151583854142
+      }
+    },
+    {
+      "stream": 88,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.8528001175686853,
+        "block_frequency": 0.6054168954200063,
+        "runs": 0.2766285357663888,
+        "longest_run": 0.1294486753407693,
+        "approximate_entropy": 0.4009992019270737,
+        "serial_1": 0.8085786622855619,
+        "serial_2": 0.1805444255088588
+      }
+    },
+    {
+      "stream": 89,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6476485841456787,
+        "block_frequency": 0.8136821664257449,
+        "runs": 0.7592721658371748,
+        "longest_run": 0.9916165314255121,
+        "approximate_entropy": 0.6798324072344875,
+        "serial_1": 0.7482300824948928,
+        "serial_2": 0.9256740864796429
+      }
+    },
+    {
+      "stream": 89,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.5979548978645415,
+        "block_frequency": 0.6992046135520892,
+        "runs": 0.793747626817128,
+        "longest_run": 0.3965587515940953,
+        "approximate_entropy": 0.1157942313658243,
+        "serial_1": 0.29376877480399005,
+        "serial_2": 0.9711373856171001
+      }
+    },
+    {
+      "stream": 90,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.2120138915169792,
+        "block_frequency": 0.22426587680637197,
+        "runs": 0.5687581846466553,
+        "longest_run": 0.8809465994784034,
+        "approximate_entropy": 0.5319857582541692,
+        "serial_1": 0.5899552077721453,
+        "serial_2": 0.09786927904752109
+      }
+    },
+    {
+      "stream": 90,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9641695807144585,
+        "block_frequency": 0.3282061909792282,
+        "runs": 0.11725400106310875,
+        "longest_run": 0.4541754635255253,
+        "approximate_entropy": 0.5059292735974515,
+        "serial_1": 0.3062890537099614,
+        "serial_2": 0.5558607295362353
+      }
+    },
+    {
+      "stream": 91,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6322832559452686,
+        "block_frequency": 0.14028918042784128,
+        "runs": 0.6887040987377419,
+        "longest_run": 0.2626510015412379,
+        "approximate_entropy": 0.11306431727463015,
+        "serial_1": 0.11896883501676943,
+        "serial_2": 0.29603006801474363
+      }
+    },
+    {
+      "stream": 91,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7149364605247621,
+        "block_frequency": 0.2385856033877163,
+        "runs": 0.7906283428264274,
+        "longest_run": 0.6238475726847705,
+        "approximate_entropy": 0.06578968679733556,
+        "serial_1": 0.23929793609304334,
+        "serial_2": 0.48502911672490506
+      }
+    },
+    {
+      "stream": 92,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.843619678045237,
+        "block_frequency": 0.614810813899576,
+        "runs": 0.962582564269423,
+        "longest_run": 0.9978853542348706,
+        "approximate_entropy": 0.8208074129963228,
+        "serial_1": 0.7486206901381186,
+        "serial_2": 0.755654449801317
+      }
+    },
+    {
+      "stream": 92,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.68743106101052,
+        "block_frequency": 0.7056679812743846,
+        "runs": 0.6830084598856571,
+        "longest_run": 0.16565759755222723,
+        "approximate_entropy": 0.9125739023816366,
+        "serial_1": 0.6828967523532614,
+        "serial_2": 0.9144527172842845
+      }
+    },
+    {
+      "stream": 93,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.14782254279459178,
+        "block_frequency": 0.5472236673261295,
+        "runs": 0.23040606508074968,
+        "longest_run": 0.8079077603517506,
+        "approximate_entropy": 0.19681194953413134,
+        "serial_1": 0.19829831144054075,
+        "serial_2": 0.038357751185812666
+      }
+    },
+    {
+      "stream": 93,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.14190061027798062,
+        "block_frequency": 0.5012338147671205,
+        "runs": 0.8345799649711875,
+        "longest_run": 0.9620787174458106,
+        "approximate_entropy": 0.07270692435938027,
+        "serial_1": 0.2535344625937156,
+        "serial_2": 0.029280795246050404
+      }
+    },
+    {
+      "stream": 94,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.26058903427361774,
+        "block_frequency": 0.31747928561433825,
+        "runs": 0.010254519183953236,
+        "longest_run": 0.7280587967137131,
+        "approximate_entropy": 0.24273980961766115,
+        "serial_1": 0.36730472208805676,
+        "serial_2": 0.20342036382632567
+      }
+    },
+    {
+      "stream": 94,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.19669825949487424,
+        "block_frequency": 0.630259771560669,
+        "runs": 0.40520687863747706,
+        "longest_run": 0.9040771859287071,
+        "approximate_entropy": 0.6472236744944427,
+        "serial_1": 0.7776940824660186,
+        "serial_2": 0.9156326186306157
+      }
+    },
+    {
+      "stream": 95,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6350654228390171,
+        "block_frequency": 0.6321079734829911,
+        "runs": 0.0470212691194257,
+        "longest_run": 0.8841703621452791,
+        "approximate_entropy": 0.15488282523765765,
+        "serial_1": 0.0025527709138463794,
+        "serial_2": 0.012017308955827201
+      }
+    },
+    {
+      "stream": 95,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7531769128928032,
+        "block_frequency": 0.9354081873593395,
+        "runs": 0.6075489101726855,
+        "longest_run": 0.5355524714994802,
+        "approximate_entropy": 0.2818663471254124,
+        "serial_1": 0.49870239081186135,
+        "serial_2": 0.6308256032893025
+      }
+    },
+    {
+      "stream": 96,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.9051639458420946,
+        "block_frequency": 0.7903249270779354,
+        "runs": 0.8912640641274446,
+        "longest_run": 0.318581643094942,
+        "approximate_entropy": 0.790236962791151,
+        "serial_1": 0.8577369108453368,
+        "serial_2": 0.5961928236460411
+      }
+    },
+    {
+      "stream": 96,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6350654228390171,
+        "block_frequency": 0.5740255543635372,
+        "runs": 0.4220010208580513,
+        "longest_run": 0.2683856059228485,
+        "approximate_entropy": 0.2719723415366777,
+        "serial_1": 0.33707028799696925,
+        "serial_2": 0.38260364658850327
+      }
+    },
+    {
+      "stream": 97,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.6020293875096527,
+        "block_frequency": 0.8527182829834212,
+        "runs": 0.028686641521992295,
+        "longest_run": 0.3277340297485809,
+        "approximate_entropy": 0.4340285193043784,
+        "serial_1": 0.1261742435332426,
+        "serial_2": 0.03550071858611889
+      }
+    },
+    {
+      "stream": 97,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.7935382838537327,
+        "block_frequency": 0.5405359841483145,
+        "runs": 0.7875723522656874,
+        "longest_run": 0.5270995287852549,
+        "approximate_entropy": 0.49769535261226144,
+        "serial_1": 0.9726431303662918,
+        "serial_2": 0.9485316328103705
+      }
+    },
+    {
+      "stream": 98,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.3515222807865367,
+        "block_frequency": 0.7735060822630554,
+        "runs": 0.6625502764426623,
+        "longest_run": 0.9752981103455043,
+        "approximate_entropy": 0.25029381336754497,
+        "serial_1": 0.656693209141843,
+        "serial_2": 0.8017576439218784
+      }
+    },
+    {
+      "stream": 98,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.1346292263901307,
+        "block_frequency": 0.2833694364791406,
+        "runs": 0.2682111300878073,
+        "longest_run": 0.8929170267192617,
+        "approximate_entropy": 0.02169383854027137,
+        "serial_1": 0.04034258080749438,
+        "serial_2": 0.01983594278999627
+      }
+    },
+    {
+      "stream": 99,
+      "use_dcs": false,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.919103946146964,
+        "block_frequency": 0.5573765480178519,
+        "runs": 0.9315241080217849,
+        "longest_run": 0.4809738607543309,
+        "approximate_entropy": 0.2664627718275287,
+        "serial_1": 0.6050237636762964,
+        "serial_2": 0.2954368016036928
+      }
+    },
+    {
+      "stream": 99,
+      "use_dcs": true,
+      "size_bytes": 131072,
+      "p_values": {
+        "frequency": 0.49423173239921125,
+        "block_frequency": 0.7381206941751823,
+        "runs": 0.15349958829326718,
+        "longest_run": 0.5076770687049152,
+        "approximate_entropy": 0.906938688879961,
+        "serial_1": 0.7999075335034299,
+        "serial_2": 0.6690562844875553
+      }
+    }
+  ]
+}

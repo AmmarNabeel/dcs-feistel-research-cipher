@@ -1,0 +1,233 @@
+{
+  "method": {
+    "seed": 20260814,
+    "paired_ablation_inputs": true,
+    "ci_unit": "independent plaintext or key sample; 128 bit flips are clustered within it",
+    "plaintext_samples_per_configuration": 100,
+    "key_samples_per_configuration": 100
+  },
+  "records": [
+    {
+      "analysis": "plaintext_bit_flip",
+      "label": "without DCS",
+      "rounds": 3,
+      "use_dcs": false,
+      "bit_flip_observations": 12800,
+      "independent_samples_for_ci": 100,
+      "mean_hamming_bits": 50.81296875,
+      "mean_percentage": 39.6976318359375,
+      "sd_hamming_bits_across_bit_flips": 13.42865574056587,
+      "sd_of_independent_sample_means": 0.46977059034392876,
+      "min_hamming_bits": 25,
+      "max_hamming_bits": 83,
+      "ci95_mean_hamming_bits_clustered": [
+        50.72089371429259,
+        50.90504378570741
+      ]
+    },
+    {
+      "analysis": "plaintext_bit_flip",
+      "label": "with DCS",
+      "rounds": 3,
+      "use_dcs": true,
+      "bit_flip_observations": 12800,
+      "independent_samples_for_ci": 100,
+      "mean_hamming_bits": 45.22234375,
+      "mean_percentage": 35.3299560546875,
+      "sd_hamming_bits_across_bit_flips": 15.388418974198446,
+      "sd_of_independent_sample_means": 0.48206880629647003,
+      "min_hamming_bits": 7,
+      "max_hamming_bits": 80,
+      "ci95_mean_hamming_bits_clustered": [
+        45.12785826396589,
+        45.31682923603411
+      ]
+    },
+    {
+      "analysis": "plaintext_bit_flip",
+      "label": "without DCS",
+      "rounds": 5,
+      "use_dcs": false,
+      "bit_flip_observations": 12800,
+      "independent_samples_for_ci": 100,
+      "mean_hamming_bits": 63.95421875,
+      "mean_percentage": 49.9642333984375,
+      "sd_hamming_bits_across_bit_flips": 5.653021377147236,
+      "sd_of_independent_sample_means": 0.4586654863510376,
+      "min_hamming_bits": 37,
+      "max_hamming_bits": 86,
+      "ci95_mean_hamming_bits_clustered": [
+        63.8643203146752,
+        64.04411718532481
+      ]
+    },
+    {
+      "analysis": "plaintext_bit_flip",
+      "label": "with DCS",
+      "rounds": 5,
+      "use_dcs": true,
+      "bit_flip_observations": 12800,
+      "independent_samples_for_ci": 100,
+      "mean_hamming_bits": 63.493359375,
+      "mean_percentage": 49.60418701171875,
+      "sd_hamming_bits_across_bit_flips": 5.728616847390629,
+      "sd_of_independent_sample_means": 0.4918490235763172,
+      "min_hamming_bits": 41,
+      "max_hamming_bits": 84,
+      "ci95_mean_hamming_bits_clustered": [
+        63.39695696637904,
+        63.58976178362096
+      ]
+    },
+    {
+      "analysis": "plaintext_bit_flip",
+      "label": "without DCS",
+      "rounds": 7,
+      "use_dcs": false,
+      "bit_flip_observations": 12800,
+      "independent_samples_for_ci": 100,
+      "mean_hamming_bits": 64.08875,
+      "mean_percentage": 50.0693359375,
+      "sd_hamming_bits_across_bit_flips": 5.701395702979241,
+      "sd_of_independent_sample_means": 0.5358506413918439,
+      "min_hamming_bits": 42,
+      "max_hamming_bits": 86,
+      "ci95_mean_hamming_bits_clustered": [
+        63.9837232742872,
+        64.19377672571281
+      ]
+    },
+    {
+      "analysis": "plaintext_bit_flip",
+      "label": "with DCS",
+      "rounds": 7,
+      "use_dcs": true,
+      "bit_flip_observations": 12800,
+      "independent_samples_for_ci": 100,
+      "mean_hamming_bits": 63.981484375,
+      "mean_percentage": 49.98553466796875,
+      "sd_hamming_bits_across_bit_flips": 5.704775660180249,
+      "sd_of_independent_sample_means": 0.47738864241529466,
+      "min_hamming_bits": 41,
+      "max_hamming_bits": 87,
+      "ci95_mean_hamming_bits_clustered": [
+        63.887916201086604,
+        64.0750525489134
+      ]
+    },
+    {
+      "analysis": "plaintext_bit_flip",
+      "label": "without DCS",
+      "rounds": 9,
+      "use_dcs": false,
+      "bit_flip_observations": 12800,
+      "independent_samples_for_ci": 100,
+      "mean_hamming_bits": 64.00140625,
+      "mean_percentage": 50.0010986328125,
+      "sd_hamming_bits_across_bit_flips": 5.640657317791606,
+      "sd_of_independent_sample_means": 0.4899463465185306,
+      "min_hamming_bits": 41,
+      "max_hamming_bits": 87,
+      "ci95_mean_hamming_bits_clustered": [
+        63.90537676608237,
+        64.09743573391764
+      ]
+    },
+    {
+      "analysis": "plaintext_bit_flip",
+      "label": "with DCS",
+      "rounds": 9,
+      "use_dcs": true,
+      "bit_flip_observations": 12800,
+      "independent_samples_for_ci": 100,
+      "mean_hamming_bits": 64.060078125,
+      "mean_percentage": 50.04693603515625,
+      "sd_hamming_bits_across_bit_flips": 5.64838682858074,
+      "sd_of_independent_sample_means": 0.499320994473512,
+      "min_hamming_bits": 42,
+      "max_hamming_bits": 84,
+      "ci95_mean_hamming_bits_clustered": [
+        63.9622112100832,
+        64.15794503991681
+      ]
+    },
+    {
+      "analysis": "key_bit_flip",
+      "label": "without DCS",
+      "rounds": 7,
+      "use_dcs": false,
+      "bit_flip_observations": 12800,
+      "independent_samples_for_ci": 100,
+      "mean_hamming_bits": 63.9475,
+      "mean_percentage": 49.958984375,
+      "sd_hamming_bits_across_bit_flips": 5.683948254100611,
+      "sd_of_independent_sample_means": 0.4636428430610325,
+      "min_hamming_bits": 41,
+      "max_hamming_bits": 87,
+      "ci95_mean_hamming_bits_clustered": [
+        63.85662600276004,
+        64.03837399723996
+      ]
+    },
+    {
+      "analysis": "key_bit_flip",
+      "label": "with DCS",
+      "rounds": 7,
+      "use_dcs": true,
+      "bit_flip_observations": 12800,
+      "independent_samples_for_ci": 100,
+      "mean_hamming_bits": 63.5859375,
+      "mean_percentage": 49.676513671875,
+      "sd_hamming_bits_across_bit_flips": 5.832743576458766,
+      "sd_of_independent_sample_means": 0.5406766794502874,
+      "min_hamming_bits": 41,
+      "max_hamming_bits": 86,
+      "ci95_mean_hamming_bits_clustered": [
+        63.47996487082774,
+        63.69191012917226
+      ]
+    }
+  ],
+  "sac_7_rounds": {
+    "without_dcs": {
+      "samples_per_input_bit": 100,
+      "matrix_cells": 16384,
+      "mean_probability": 0.5000689697265625,
+      "mean_absolute_deviation_from_0.5": 0.03981262207031251,
+      "min_probability": 0.3,
+      "max_probability": 0.69
+    },
+    "with_dcs": {
+      "samples_per_input_bit": 100,
+      "matrix_cells": 16384,
+      "mean_probability": 0.4996795654296875,
+      "mean_absolute_deviation_from_0.5": 0.03977600097656251,
+      "min_probability": 0.27,
+      "max_probability": 0.69
+    }
+  },
+  "sbox": {
+    "bijective": true,
+    "differential_uniformity": 4,
+    "maximum_differential_probability": 0.25,
+    "maximum_absolute_LAT_entry": 8,
+    "component_nonlinearity_min": 4,
+    "component_nonlinearity_values": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  }
+}

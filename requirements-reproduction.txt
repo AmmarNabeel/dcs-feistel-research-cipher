@@ -1,0 +1,9 @@
+# Versions recorded for the final Windows experiment environment.
+cryptography==50.0.0
+numpy==2.5.2
+scipy==1.18.0
+psutil==7.2.2
+
+# Used only to regenerate the publication figures.
+matplotlib>=3.8
+pytest>=8

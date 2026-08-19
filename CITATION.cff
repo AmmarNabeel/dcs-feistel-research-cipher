@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript."
+title: "Reference code for a Feistel-based encryption algorithm with Dynamic Cross-Swapping"
+type: software
+version: 1.0.0
+date-released: 2026-08-16
+authors:
+  - name: "DCS Feistel research cipher contributors"
+license: MIT
